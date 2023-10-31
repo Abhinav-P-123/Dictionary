@@ -53,10 +53,13 @@ function App() {
           setMeaningsHTML(tempHTML)
         } else if (data.length == undefined) {
           setError(true)
+          setKeywordEntered(true)
+
         }
       })
     }
   }
+  console.log(keywordEntered)
   if (keywordEntered) {
     if (!error) {
       const elements = meaningsHTML.map((item, index) => {
@@ -131,7 +134,7 @@ function App() {
           </div>
         </div >
       );
-    } else {
+    } else if (error && timescalled >= 0) {
       return (<div className="App">
         <input type='text' id='word-input' className='word-input' onKeyUp={handleSubmit} placeholder='Search' />
         <div className="errordisplay">
