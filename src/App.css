@@ -1,38 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body,
+html {
+  background-color: #141b2d;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  font-family: 'Playpen Sans', cursive;
+}
+
 .App {
-  text-align: center;
+  max-width: 736px;
+  min-width: 244px;
+  width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#word-input {
+  background-color: #1f2a40;
+  color: #ffffff4a;
+  border: none;
+  box-sizing: border-box;
+  padding: 1rem 0.8rem;
+  caret-color: #fff;
+  border-radius: 0.4rem;
+  outline: none;
+  width: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#word-input:focus {
+  transition: outline 100ms;
+  outline: 4px solid #ffffff19;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#word-input::placeholder {
+  color: #ffffff5f;
+}
+
+.display {
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
+}
+
+.display>.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display>.one>.part1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.display>.one>.part1>* {
+  margin: 0;
+  color: #fff;
+}
+
+.display>.one>.part1>h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.display>.one>button {
+  align-self: center;
+}
+
+.playAudioBtn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding-top: 0.3rem;
+  padding-left: 8px;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.playAudioBtn:hover {
+  transition: background-color 100ms;
+  background-color: #fff;
+}
+
+.playSVG {
+  fill: #fff;
+  position: relative;
+  left: 0.03rem;
+}
+
+.playAudioBtn:hover>.playSVG {
+  transition: fill 100ms;
+  fill: #1f2a40;
+}
+
+.meaningsSectionHeader {
+  font-size: clamp(18px, 4vw, 24px);
+  font-style: italic;
+  margin-block: 1.4rem;
+  margin-block-start: 3rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.meaningsSectionHeader::after {
+  content: "";
+  height: 1px;
+  background-color: hsl(0, 0%, 91%);
+  display: block;
+  width: 100%;
+  margin-left: 1rem;
+  position: relative;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.definition-statement {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.definition-example {
+  color: #ffffff90;
+  margin: 0;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.meanings-list {
+  color: #fff;
+}
+
+.synonyms,
+.antonyms {
+  display: flex;
+  gap: 1rem;
+}
+
+.synonym-heading,
+.antonyms-heading {
+  color: #ffffff90;
+  font-weight: 200;
+  display: inline-block;
+  margin: 0;
+}
+
+.synonym-wordgroup,
+.antonyms-wordgroup {
+  display: inline-flex;
+  gap: 0.74rem;
+}
+
+.synonym-word,
+.antonyms-word {
+  margin: 0;
+  color: #53acd9;
+}
+
+.errordisplay {
+  margin-top: clamp(4rem, 15vw, 8.125rem);
+}
+
+.errortitle {
+  font-size: clamp(16px, 4vw, 20px);
+  text-align: center;
+  color: #fff;
+}
+
+.errormessage {
+  font-size: clamp(15px, 3vw, 18px);
+  color: #ffffff90;
+  font-weight: 300;
+  text-align: center;
 }
