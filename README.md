@@ -14,14 +14,4 @@ This is an application built using React that enables users to search for word d
  **Synonyms and Antonyms;** Explore. Antonyms, for a given word.
 
 ## Demo
-
-Feel free to check out the demo of this application hosted on [GitHub Pages](https;//your github username.github.io/your repo name).
-
-## Getting Started
-
-To run this project or make any improvements follow these steps;
-
-1. **Clone the repository;**
-
-```bash
-git clone https;//github.com/your github username/your repo name.git
+(https://dictionary-plxd.onrender.com)
