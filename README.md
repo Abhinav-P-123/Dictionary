@@ -14,4 +14,4 @@ This is an application built using React that enables users to search for word d
  **Synonyms and Antonyms;** Explore. Antonyms, for a given word.
 
 ## Demo
-(https://dictionary-plxd.onrender.com)
+[Live Web Application](https://dictionary-plxd.onrender.com)
