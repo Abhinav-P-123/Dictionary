@@ -27,7 +27,8 @@ html {
   caret-color: #fff;
   border-radius: 0.4rem;
   outline: none;
-  width: 100%;
+  max-width: 100%;
+  min-width: 40%;
   margin: 0;
 }
 
