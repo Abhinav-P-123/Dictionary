@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
 
-body,
 html {
   background-color: #141b2d;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
+  box-sizing: border-box;
+  width: 98vw;
+  margin: 1vw;
+  padding: 2rem;
+  scrollbar-width: 0;
 }
 
 * {
@@ -15,11 +16,17 @@ html {
 .App {
   max-width: 736px;
   min-width: 244px;
-  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 #word-input {
   background-color: #1f2a40;
+  width: 90%;
   color: #ffffff4a;
   border: none;
   box-sizing: border-box;
@@ -27,9 +34,8 @@ html {
   caret-color: #fff;
   border-radius: 0.4rem;
   outline: none;
-  width: 100%;
-  min-width: 80%;
-  margin: 0;
+  margin: 1rem;
+  display: block;
 }
 
 #word-input:focus {
